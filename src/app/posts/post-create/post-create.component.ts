@@ -6,7 +6,10 @@ import {Component} from '@angular/core';
 
 })
 export class PostCreateComponent {
+  newPost = 'TIDAK ADA KONTEN';
+
   onAddPost() {
+    this.newPost = 'Post Pengguna';
     alert('Post Ditambah');
   }
 }
