@@ -6,10 +6,11 @@ import {Component} from '@angular/core';
 
 })
 export class PostCreateComponent {
+  enteredValue = '';
   newPost = 'TIDAK ADA KONTEN';
 
-  onAddPost() {
-    this.newPost = 'Post Pengguna';
-    alert('Post Ditambah');
+  onAddPost(postInput: HTMLTextAreaElement) {
+    // console.dir(postInput);
+    this.newPost = postInput.value;
   }
 }
