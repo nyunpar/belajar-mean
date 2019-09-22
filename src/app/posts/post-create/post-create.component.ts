@@ -9,8 +9,7 @@ export class PostCreateComponent {
   enteredValue = '';
   newPost = 'TIDAK ADA KONTEN';
 
-  onAddPost(postInput: HTMLTextAreaElement) {
-    // console.dir(postInput);
-    this.newPost = postInput.value;
+  onAddPost() {
+    this.newPost = this.enteredValue;
   }
 }
