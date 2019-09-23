@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'belajar-mean';
+  storedPosts = [];
+
+  onPostEmitted(post) {
+    this.storedPosts.push(post);
+  }
 }
